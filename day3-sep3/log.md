@@ -1,0 +1,3 @@
+- static initialization order fiasco is when a the runtime initialization of global objects is undefined, and this is solved by wrapping the object in a static function returning a reference to that object. this doesnt occur in a single translation unit because objects are initialised top to bottom.
+
+- Implemented test framework and initial test cases for testing the llm engine: https://github.com/iitimii/llm-engine/commit/fc928baf55e7dbeca64dcfb3fa5ec618b7a99e93
