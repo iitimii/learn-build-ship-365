@@ -1,0 +1,6 @@
+- Solved contains duplicate
+- Solved max value
+- Solved longest word
+- learnt about istringstream (only read) and stringstream (read and write)
+- Solved all even
+- Solved is prime

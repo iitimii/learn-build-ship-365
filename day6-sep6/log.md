@@ -1,0 +1,2 @@
+- Sunday break
+- Reviewed Structy and NeetCode roadmaps. Starting with Structy.
