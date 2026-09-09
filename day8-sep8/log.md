@@ -1,0 +1,3 @@
+- finished the logger and test suite
+- started implementing tensors
+- commit: https://github.com/iitimii/llm-engine/commit/015b834b71b4a9def9ce860007dca46c43adc742
