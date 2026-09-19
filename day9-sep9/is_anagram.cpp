@@ -1,10 +1,13 @@
+#include <string>
+using namespace std;
+
 class Solution {
 public:
     bool isAnagram(string s, string t) {
         if (s.length() != t.length()) return false;
 
-        std::unordered_map<char, int> s_counter;
-        std::unordered_map<char, int> t_counter;
+        unordered_map<char, int> s_counter;
+        unordered_map<char, int> t_counter;
 
         for (int i{0}; i<s.length(); ++i){
             ++s_counter[s[i]];
@@ -12,5 +15,26 @@ public:
         }
 
         return s_counter == t_counter;
+    }
+};
+
+
+class Solution {
+public:
+    bool isAnagram(string s, string t) {
+        if (s.length() != t.length()) return false;
+
+        int counter [26] {};
+
+        for (int i{0}; i<s.length(); ++i){
+            ++counter[s[i] - 'a'];
+            --counter[t[i] - 'a'];
+        }
+
+        for (int i : counter) {
+            if (i != 0) return false;
+        }
+
+        return true;
     }
 };
